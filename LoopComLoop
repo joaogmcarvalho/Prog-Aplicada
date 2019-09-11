@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main(){
+	int num, result=0, i, j;
+	
+	printf("Insira um numero: ");
+	scanf("%d", &num);
+	
+	for(i=0;i<num;i++){
+		printf("\n");
+		result++;
+		for(j=0;j<i+1;j++){
+			printf("%d", result);
+		}
+	}
+	
+	return 0;
+}
