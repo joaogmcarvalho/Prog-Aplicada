@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main(){ 
+	int num, result=1, i, j;
+	
+	printf("Insira um numero: ");
+	scanf("%d", &num);//pegando o numero para o loop
+	
+	for(i=0;i<num;i++){
+		for(j=0;j<num;j++){
+			if(j<i){
+			printf(" ");//printando o espaço antes do numero	
+			}else{
+				printf("%d", result++);//incrementando o contador
+			}
+		}
+		result=1;//zerando o contador
+		printf("\n");
+	}
+	
+	/*foi usado a condiçao(if e else) para printar o espaço,
+	o contador é zerado depois do j e dentro i*/
+	
+	return 0;
+}
